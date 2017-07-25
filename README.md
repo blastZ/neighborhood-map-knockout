@@ -1,6 +1,6 @@
 ## Neighborhood Map
 
-udacity neighborhood map project, click to see the [live demo](https://blastz.github.io/neighborhood-map-knockout)
+udacity neighborhood map project, click to see the [live demo](https://blastz.github.io/neighborhood-map-knockout/)
 
 ### Framework And Libraries
 

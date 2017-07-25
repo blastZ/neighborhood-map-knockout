@@ -197,7 +197,7 @@ var ViewModel = function() {
 		};
 
 		for (var i=0; i<self.locations().length; i++) {
-			var wikiUrl = 'http://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=' + self.locations()[i].title() + '&format=json&callback=wikiCallBack';
+			var wikiUrl = 'https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=' + self.locations()[i].title() + '&format=json&callback=wikiCallBack';
 			wikipediaRequest(i);
 		}
 	};
