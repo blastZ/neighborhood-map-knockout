@@ -6,20 +6,20 @@
 	<script src="js/jquery-3.2.0.min.js"></script>
 	<link rel="stylesheet" href="css/app.css">
 	<link rel="stylesheet" href="css/w3.css">
-	<script src='js/knockout-3.4.2.js'></script>
+	<script src="js/knockout-3.4.2.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQwGrxv0G8j-tHGDB5MVP5Xg5ls0ULHZk"></script>
 </head>
 <body>
 	<div id="map"></div>
-	<div id='nav-button' data-bind="click: showPanel, visible: shouldShowNavButton">
+	<div id="nav-button" data-bind="click: showPanel, visible: shouldShowNavButton">
         <div></div>
         <div></div>
         <div></div>
     </div>
 	<div id="nav-panel" data-bind="visible: shouldShowNavPanel" class="flex-box flex-column">
         <button data-bind="click: hidePanel" style="flex: 1 0 auto; max-height: 50px;" class="w3-button w3-green w3-hover-light-green w3-large">Close</button>
-        <input data-bind="textInput: searchString" id="filter-input" type="text" class="w3-input"></input>
-        <ul data-bind="foreach: locations" style="flex: '8 1 auto" class="w3-ul w3-hoverable">
+        <input data-bind="textInput: searchString" id="filter-input" type="text" class="w3-input">
+        <ul data-bind="foreach: locations" style="flex: 8 1 auto" class="w3-ul w3-hoverable">
 			<li class="text-white" data-bind="text: title, click: reveal"></li>
 		</ul>
     </div>

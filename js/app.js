@@ -189,6 +189,9 @@ var ViewModel = function() {
 						newWikiInfo = newWikiInfo.concat('<li>no related articles</li></ul>');
 						self.locations()[index].wikiInfo(newWikiInfo);
 					}
+				},
+				error: function() {
+					window.alert('wikipedia request failed!');
 				}
 			});
 		};
