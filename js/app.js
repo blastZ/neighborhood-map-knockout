@@ -191,7 +191,7 @@ var ViewModel = function() {
 					}
 				},
 				error: function() {
-					window.alert('wikipedia request failed!');
+					console.log('wikipedia request failed!');
 				}
 			});
 		};
